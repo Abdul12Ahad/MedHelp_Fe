@@ -1,0 +1,88 @@
+/* MODAL BACKDROP */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* CARD */
+.modal-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 620px;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: scaleIn 0.35s ease;
+}
+
+/* HEADER */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.modal-header h3 {
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #64748b;
+}
+
+/* FORM */
+.health-form textarea,
+.health-form input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+}
+
+.health-form input:focus,
+.health-form textarea:focus {
+  border-color: #2ec4b6;
+}
+
+/* ROW */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+/* BUTTON */
+.btn-primary.full {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem;
+  border-radius: 999px;
+  font-size: 1rem;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); }
+  to { transform: scale(1); }
+}
