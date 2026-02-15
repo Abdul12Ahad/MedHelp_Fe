@@ -4,7 +4,7 @@ import "../styles/landing.css";
 const Header = () => {
   return (
     <header className="navbar">
-      <h2 className="logo">MedHelp</h2>
+      <h2 className="logo">MedHel</h2>
     </header>
   );
 };
