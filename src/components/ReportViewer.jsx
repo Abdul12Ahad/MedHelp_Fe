@@ -15,7 +15,7 @@ const ReportViewer = ({ report, onClose }) => {
     y += 10;
     doc.setDrawColor("#2ec4b6");
     doc.setLineWidth(0.8);
-    doc.line(20, y, 190, y); // divider line
+    doc.line(20, y, 190, y); 
 
     y += 10;
     doc.setFontSize(12);
@@ -129,7 +129,7 @@ const ReportViewer = ({ report, onClose }) => {
         </div>
 
         <p className="report-disclaimer">
-          ⚠️ Disclaimer: This is a general wellness report. Not a medical diagnosis. Consult a doctor for personalized advice.
+          Disclaimer: This is a general wellness report. Not a medical diagnosis. Consult a doctor for personalized advice.
         </p>
 
         <div className="report-actions">

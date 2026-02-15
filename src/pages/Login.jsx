@@ -21,7 +21,7 @@ const Login = () => {
 
     try {
       await loginUser(formData);
-      navigate("/dashboard"); // next step
+      navigate("/dashboard"); 
     } catch (err) {
       setError(err.message);
     }

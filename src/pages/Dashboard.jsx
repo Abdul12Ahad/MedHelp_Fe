@@ -31,7 +31,6 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
 
-      {/* HEADER */}
       <header className="dashboard-header">
         <h2>Hello, {user?.name} 👋</h2>
         <button className="btn-secondary" onClick={handleLogout}>
@@ -39,7 +38,6 @@ const Dashboard = () => {
         </button>
       </header>
 
-      {/* REPORT LIST */}
       <section className="reports-section">
         <h3>Your Previous Wellness Reports</h3>
 
@@ -58,7 +56,6 @@ const Dashboard = () => {
         )}
       </section>
 
-      {/* VIEW REPORT */}
       {activeReport && (
         <ReportViewer
           report={activeReport}
@@ -66,7 +63,6 @@ const Dashboard = () => {
         />
       )}
 
-      {/* GENERATE BUTTON */}
 <div className="generate-section">
   <button
     className="btn-primary large"
@@ -76,7 +72,6 @@ const Dashboard = () => {
   </button>
 </div>
 
-{/* FORM MODAL */}
 {showForm && (
   <HealthForm
     onClose={() => setShowForm(false)}

@@ -22,7 +22,7 @@ const Register = () => {
 
     try {
       await registerUser(formData);
-      navigate("/login"); // go to login after success
+      navigate("/login"); 
     } catch (err) {
       setError(err.message);
     }
