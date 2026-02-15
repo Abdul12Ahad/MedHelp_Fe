@@ -1,4 +1,4 @@
-const API_BASE = "https://medhel.netlify.app//api";
+const API_BASE = "https://medhel-be.onrender.com/api";
 
 export const apiRequest = async (endpoint, method = "GET", body) => {
   const token = localStorage.getItem("token");

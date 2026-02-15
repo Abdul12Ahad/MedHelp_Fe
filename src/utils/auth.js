@@ -1,4 +1,4 @@
-const API_URL = "https://medhel.netlify.app/api/auth";
+const API_URL = "https://medhel-be.onrender.com/api/auth";
 
 export const registerUser = async (formData) => {
   const res = await fetch(`${API_URL}/register`, {
